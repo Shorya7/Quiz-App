@@ -1,46 +1,55 @@
     const Questionbank = [
         {
-            Question: "What is the capital of India?",
+            Question: "Which of the following award is not won by MS Dhoni?",
             Answers: [
-                { Answer: "Delhi", isCorrect: true },
-                { Answer: "Pune", isCorrect: false },
-                { Answer: "Ranchi", isCorrect: false },
-                { Answer: "Patna", isCorrect: false }
+                { Answer: "Padma Shri", isCorrect: false },
+                { Answer: "Bharat Ratna", isCorrect: true },
+                { Answer: "Padma Bhushan", isCorrect: false },
+                { Answer: "Rajiv Gandhi Khel Ratna", isCorrect: false }
             ]
         },
         {
-            Question: "Who is the PM of India?",
+            Question: "UIDAI has launched a new mobile app named which to perform face authentication?",
             Answers: [
-                { Answer: "Amit Shah", isCorrect: false },
-                { Answer: "Modi", isCorrect: true },
-                { Answer: "Raga", isCorrect: false },
-                { Answer: "Kejri", isCorrect: false }
+                { Answer: "Face Recognition", isCorrect: false },
+                { Answer: "Face Identifier", isCorrect: false },
+                { Answer: "Aadhaar Face Recognition", isCorrect: false },
+                { Answer: "AadhaarFaceRd", isCorrect: true }
             ]
         }, {
-            Question: "2 +3 = ?",
+            Question: "Which company has partnered with the Indian government to roll out a vaccine finder tool on its mobile app in India to get vaccinated?",
             Answers: [
-                { Answer: "5", isCorrect: true },
-                { Answer: "7", isCorrect: false },
-                { Answer: "4", isCorrect: false },
-                { Answer: "3", isCorrect: false }
+                { Answer: "Facebook", isCorrect: true },
+                { Answer: "Google", isCorrect: false },
+                { Answer: "Microsoft", isCorrect: false },
+                { Answer: "Amazon", isCorrect: false }
             ]
         },
         {
-            Question: "What comes after january?",
+            Question: "Which first Indian player scored a triple century in Test cricket?",
             Answers: [
-                { Answer: "feb", isCorrect: true },
-                { Answer: "march", isCorrect: false },
-                { Answer: "june", isCorrect: false },
-                { Answer: "sept", isCorrect: false }
+                { Answer: "Sourav Ganguly", isCorrect: false },
+                { Answer: "Sachin Tendulkar", isCorrect: false },
+                { Answer: "Virender Sehwag", isCorrect: true },
+                { Answer: "Karun Nair", isCorrect: false }
             ]
         },
         {
-            Question: "Which company pankaj is working currently?",
+            Question: "Which IIT has transformed an existing Nitrogen Plant into an Oxygen Generator?",
             Answers: [
-                { Answer: "Accenture", isCorrect: false },
-                { Answer: "Oracle", isCorrect: false },
-                { Answer: "L&T", isCorrect: true },
-                { Answer: "IBM", isCorrect: false }
+                { Answer: "IIT Kharagpur", isCorrect: false },
+                { Answer: "IIT Delhi", isCorrect: false },
+                { Answer: "IIT Bombay", isCorrect: true },
+                { Answer: "IIT Kanpur", isCorrect: false }
+            ]
+        },
+        {
+            Question: "Which telecom company has become the first one in India to demonstrate the operation of the 5G network?",
+            Answers: [
+                { Answer: "Vi", isCorrect: false },
+                { Answer: "Reliance Jio", isCorrect: false },
+                { Answer: "BSNL", isCorrect: false },
+                { Answer: "Airtel", isCorrect: true }
             ]
         }
     ]
