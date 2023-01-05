@@ -1,12 +1,12 @@
 import Quiz from './components/Quiz';
 import './App.css';
 
-function App() {
+
+
+export default function App() {
   return (
-    <div className="App">
+    <div>
       <Quiz/>
     </div>
   );
 }
-
-export default App;

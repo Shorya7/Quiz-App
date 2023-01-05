@@ -51,6 +51,42 @@
                 { Answer: "BSNL", isCorrect: false },
                 { Answer: "Airtel", isCorrect: true }
             ]
+        },
+        {
+            Question: "Which University offered the first-ever academic programme in Computer Science?",
+            Answers: [
+                { Answer: "Harvard University", isCorrect: false },
+                { Answer: "University of Glasgow", isCorrect: false },
+                { Answer: "Cambridge University", isCorrect: true },
+                { Answer: "MIT", isCorrect: false }
+            ]
+        },
+        {
+            Question: "Which institute collaborates with NVIDIA to establish India's first 'NVIDIA Artificial Intelligence Technology Centre' to speed up the research work on AI and its commercial purpose?",
+            Answers: [
+                { Answer: "IIT-J", isCorrect: false },
+                { Answer: "IIT-B", isCorrect: false },
+                { Answer: "IIT-D", isCorrect: false },
+                { Answer: "IIT-H", isCorrect: true }
+            ]
+        },
+        {
+            Question: "Name the driving license app, that is introduced by the government recently.",
+            Answers: [
+                { Answer: "G-Yatra", isCorrect: false },
+                { Answer: "Sarathi", isCorrect: true },
+                { Answer: "Spotify", isCorrect: false },
+                { Answer: "m-Parivahan", isCorrect: false }
+            ]
+        },
+        {
+            Question: "Which social media has inked an agreement with International Cricket Council to get exclusive digital content rights for ICC matches in South Asia, recently?",
+            Answers: [
+                { Answer: "Facebook", isCorrect: true },
+                { Answer: "Instagram", isCorrect: false },
+                { Answer: "YouTube", isCorrect: false },
+                { Answer: "Twitter", isCorrect: false }
+            ]
         }
     ]
 

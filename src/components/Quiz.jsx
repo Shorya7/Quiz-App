@@ -4,10 +4,31 @@ import Questionbank from './QuizData';
 import QuizResult from './QuizResult';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import { useTimer } from 'react-timer-hook';
+
+    
+    
 const Quiz = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [showScore, setShowScore] = useState(false);
+    
+    const time = new Date();
+    time.setSeconds(time.getSeconds() + 30);
+    function MyTimer({ expiryTimestamp }) {
+        const nextQuestion= currentQuestion+1;
+        const {
+          seconds,
+        } = useTimer({ expiryTimestamp, onExpire: () => setCurrentQuestion(nextQuestion) });
+
+        return (
+          <div style={{textAlign: 'center'}}>
+            <div style={{fontSize: '80px'}}>
+              <span>{seconds}</span>
+            </div>
+          </div>
+        );
+      }
 
 const handleAnswerResponse=(isCorrect)=>
 {
@@ -44,6 +65,7 @@ const resetQuiz=()=>
             {showScore ? (<QuizResult score={score} resetQuiz={resetQuiz}/>)
                 : (
                     <>
+                    <MyTimer expiryTimestamp={time} />
                         <div className='question-section'>
                             <div className='question-count'>
                                <span>{currentQuestion+1}</span>/{Questionbank.length}
