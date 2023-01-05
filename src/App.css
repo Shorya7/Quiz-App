@@ -88,4 +88,11 @@ button:hover {
   background-color: #3f4256;
 }
 
-
+@media (max-width:680px){
+  .answer-section{
+    flex-direction: column;
+  }
+  button{
+    width: 100%;
+  }
+}
