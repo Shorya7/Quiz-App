@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import Questionbank from './QuizData';
 import QuizResult from './QuizResult';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const Quiz = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
@@ -12,9 +14,11 @@ const handleAnswerResponse=(isCorrect)=>
     if(isCorrect)
     {
         setScore(score+5);
+        toast.success('Correct Answer!');
     }
     else{
         setScore(score-1);
+        toast.error('Wrong Answer!');
     }
 
    const nextQuestion= currentQuestion+1;
@@ -36,6 +40,7 @@ const resetQuiz=()=>
 
     return (
         <div className='app'>
+            <ToastContainer autoClose={4000} theme="colored" newestOnTop={true}/>
             {showScore ? (<QuizResult score={score} resetQuiz={resetQuiz}/>)
                 : (
                     <>

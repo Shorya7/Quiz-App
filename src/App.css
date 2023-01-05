@@ -32,7 +32,7 @@ body {
   background: rgb(24,24,25);
 background: linear-gradient(173deg, rgba(24,24,25,1) 1%, rgba(45,88,193,1) 53%, rgba(24,24,25,1) 99%, rgba(21,23,23,1) 100%);
   width: 50vw;
-  height: 270px;
+  height: auto;
   border-radius: 15px;
   padding: 25px;
   box-shadow: 10px 10px 42px 0px rgba(63, 59, 59, 0.75);
@@ -84,24 +84,8 @@ button {
   cursor: pointer;
 }
 
-
-.correct {
-  background-color: #2f922f;
-}
-
-.incorrect {
-  background-color: #ff3333;
-}
-
 button:hover {
-  background-color: #3b3f52;
+  background-color: #3f4256;
 }
 
-button:focus {
-  outline: none;
-}
-
-button svg {
-  margin-right: 5px;
-}
 
